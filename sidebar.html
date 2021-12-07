@@ -1,0 +1,21 @@
+{% load static %}
+<div class="border-right border-bg-dark h-100">
+    <div class="text-center">
+    
+        <img src="{% static 'style/img/rk1000.jfif' %}"
+
+        class="img-fluid rounded-circle mt-3" width="120px" height="120px">
+        <h2 class="text-whithe mt-3 st-font">RKPAL</h2>
+
+    </div>
+    <hr class="border-light">
+                  
+    <nav class="nav flex-column text-center">
+       <h3> 
+        <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+        <a href="{% url 'edu' %}" class="nav-link {{skill}}">Skills</a>
+        <a href="{% url 'serv' %}" class="nav-link {{serve}}">SERVICESS</a>
+        <a href="{% url 'contect' %}" class="nav-link {{contect}}">Contect</a>
+    </h3>
+    </nav>
+</div>

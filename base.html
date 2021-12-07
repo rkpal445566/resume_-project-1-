@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="{% static 'style/cs/fontall.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'style/cs/bootstrap.min.css' %}">
+   
+    {% block core %}
+    <link rel="stylesheet" href="{% static 'style/cs/allcs.css' %}">
+    {% endblock core %}
+    
+    
+</head>
+<body>
+
+    
+    <div class="container-fluid border-light">
+        <div class="row">
+            <div class="col-sm-3">
+              {% include "core/sidebar.html" %}  
+                
+                
+            </div>
+               <div class="col-sm-9">
+              {% block content %} {% endblock content %}
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+    <script src="{% static 'style/js/jquery.js' %}"></script>
+    <script src="{% static 'style/js/proper.js' %}"></script>
+    <script src="{% static 'style/js/fontall.min.js' %}"></script>
+    <script src="{% static 'style/js/bootstrap.min.js' %}"></script>
+    
+    
+    
+
+</body>
+</html>
